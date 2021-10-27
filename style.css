@@ -25,7 +25,7 @@ header {
    position: relative;
    top: 0;
    height: 100vh;
-   background: url(/Img/code-bg.jpg) no-repeat;
+   background: url(Img/code-bg.jpg) no-repeat;
    background-size: cover;
    width: 100%;
    z-index: 1;
