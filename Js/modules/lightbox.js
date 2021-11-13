@@ -1,12 +1,14 @@
-export default function lightbox () {
+export const lightbox = () => {
     const images = document.querySelectorAll('.lightbox__images');
     const lightbox = document.querySelector(".lightbox");
     const lightboxImg = document.querySelector('.lightbox__img');
     const lightboxIcon = document.querySelector('.lightbox__icon');
     const body = document.body;
+    // console.log(images);
 
     images.forEach(img => {
         img.addEventListener('click', e => {
+            // alert("Auch")
             addImgage(img.getAttribute('src'), img.getAttribute('alt'));
             body.classList.add('.no-scroll')
             lightboxImg.classList.add('showImg');
