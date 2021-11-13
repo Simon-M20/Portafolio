@@ -31,7 +31,7 @@
     <header>
         <article class="flex md:justify-between justify-start items-center shadow-md py-2 header__blur">
             <figure class="md:w-1/12 w-1/6 ml-6">
-                <img class="w-1/2" src="Img/pikachu.png" alt="pikachu con gorrita">
+                <img class="w-1/2" src="Img/pikachu.png" alt="pikachu con gorrita" loading="lazy">
             </figure>
             <div class="menu shadow-md md:shadow-sm">
                 <nav class="w-auto">
@@ -96,16 +96,16 @@
                 <h2 class="text-center text-4xl font-semibold mb-4">Habilidades</h2>
                 <p class="text-sm text-center">Tecnologías con las que he trabajado en el transcurso de mi carrera como desarrollador</p>
                 <div class="md:grid md:grid-cols-3 md:grid-rows-2 md:justify-items-center md:place-items-center md:w-4/5 w-full mx-auto pt-6 flex flex-wrap justify-center items-center">
-                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-3">
-                        <img class="hover:shadow-2xl" src="Img/HTML-logo.png" alt="HTML Logo" title="HTML ' HyperText Markup Language'">
+                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-5 my-3 md:my-0">
+                        <img class="hover:shadow-2xl" src="Img/HTML-logo.png" alt="HTML Logo" title="HTML ' HyperText Markup Language'" loading="lazy">
                     </figure>
-                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-3">
+                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-5 my-3 md:my-0">
                         <img class="hover:shadow-2xl p-4" loading="lazy" src="Img/CSS-logo.png" alt="CSS logo" title="CSS 'Cascading Style Sheets'">
                     </figure>
-                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-3">
+                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-5 my-3 md:my-0">
                         <img class="hover:shadow-2xl p-1" loading="lazy" src="Img/javascript-logo.png" alt="JavaScript logo" title="JavaScript">
                     </figure>
-                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-3">
+                    <figure class="md:w-1/2 w-1/3 md:mx-0 mx-5 my-3 md:my-0">
                         <img class="hover:shadow-2xl p-4" loading="lazy" src="Img/Tailwind-css.png" alt="Tailwind-CSS Logo" title="Tailwind CSS">
                     </figure>
                     <figure class="md:w-1/2 w-1/3 md:mx-0 mx-3">
@@ -122,7 +122,7 @@
                 <div class="flex flex-wrap justify-center items-center p-7 my-5">
                     <figure class="card">
                         <div class="imgBx">
-                            <img src="Img/responsive-design.png" alt="Responsive Design">
+                            <img src="Img/responsive-design.png" alt="Responsive Design" loading="lazy">
                         </div>
                         <figcaption class="content-card">
                             <h3>Diseño Responsive</h3>
@@ -132,7 +132,7 @@
 
                     <figure class="card">
                         <div class="imgBx">
-                            <img src="Img/development.png" alt="Development">
+                            <img src="Img/development.png" alt="Development" loading="lazy">
                         </div>
                         <figcaption class="content-card">
                             <h3>Desarrollo</h3>
@@ -142,7 +142,7 @@
 
                     <figure class="card">
                         <div class="imgBx">
-                            <img src="Img/creative.png" alt="Creative Thinking">
+                            <img src="Img/creative.png" alt="Creative Thinking" loading="lazy">
                         </div>
                         <figcaption class="content-card">
                             <h3>Diseño Creativo</h3>
@@ -192,27 +192,27 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <figure class="shadow-lg rounded-md">
-                                <img src="Img/Crowdfunding product page.jpg" alt="Crowdfunding product page">
+                                <img src="Img/Crowdfunding product page.jpg" alt="Crowdfunding product page" loading="lazy">
                             </figure>
                         </div>
                         <div class="swiper-slide">
                             <figure class="shadow-lg rounded-md">
-                                    <img src="Img/Get to know everyhting about being a Veterinarian.png" alt="Get to know everyhting about beign a Veterinarian">
+                                    <img src="Img/Get to know everyhting about being a Veterinarian.png" alt="Get to know everyhting about beign a Veterinarian" loading="lazy">
                               </figure>
                         </div>
                         <div class="swiper-slide">
                             <figure>
-                                <img src="Img/Sunnyside landing page.jpg" alt="Sunnyside landing page">
+                                <img src="Img/Sunnyside landing page.jpg" alt="Sunnyside landing page" loading="lazy">
                             </figure>
                         </div>
                         <div class="swiper-slide">
                             <figure class="shadow-lg rounded-md">
-                                <img src="Img/Blogr landing page.jpg" alt="Blogr landing page">
+                                <img src="Img/Blogr landing page.jpg" alt="Blogr landing page" loading="lazy">
                             </figure>
                         </div>
                         <div class="swiper-slide">
                             <figure class="shadow-lg rounded-md">
-                                <img src="Img/Time tracking dashboard.jpg" alt="Time tracking dashboard">
+                                <img src="Img/Time tracking dashboard.jpg" alt="Time tracking dashboard" loading="lazy">
                             </figure>
                         </div>
                       
@@ -223,6 +223,14 @@
                     <div class="swiper-button-prev md:block"></div>
                     <div class="swiper-button-next md:block"></div>
                   
+                </div>
+
+                <!-- Lightbox effect -->
+                <div id="lightbox" class="lightbox">
+                    <figure class="lightbox__figure">
+                        <img class="lightbox__img" src="" alt="" loading="lazy">
+                    </figure>
+                    <i class="fas fa-times text-2xl lightbox__icon"></i>
                 </div>
             </article>
         </section>
@@ -285,9 +293,9 @@
             <a href="https://www.instagram.com/simon_moreno_/" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-instagram py-1"></i>
             </a>
-            <a href="https://www.facebook.com/simon.moreno.794" target="_blank" rel="noopener noreferrer">
+            <!-- <a href="https://www.facebook.com/simon.moreno.794" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-facebook py-1"></i>
-            </a>
+            </a> -->
             <a href="https://t.me/Simon_moreno" target="_blank" rel="noopener noreferrer">
                 <i class="fab fa-telegram-plane"></i>
             </a>
@@ -300,10 +308,16 @@
             <p class="text-center text-white">Solo tienes que escribirme. Si no te sientes cómodo haciéndolo a través de un sitio web, estas son algunas de las redes que pueden ayudarte.</p>
             <article class="flex justify-center items-center text-2xl text-white mt-4">
                 <a href="https://api.whatsapp.com/send?phone=584262148909" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-whatsapp p-1"></i>
+                    <i class="fab fa-whatsapp p-1 mx-1"></i>
                 </a>
                 <a href="https://t.me/Simon_moreno" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-telegram-plane p-1"></i>
+                    <i class="fab fa-telegram-plane p-1 mx-1"></i>
+                </a>
+                <a href="https://www.instagram.com/simon_moreno_/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram p-1 mx-1"></i>
+                </a>
+                <a href="https://github.com/Simon-M20" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github p-1 mx-1"></i>
                 </a>
             </article>
             

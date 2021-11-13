@@ -3,6 +3,7 @@ import { swiper } from "./modules/swiper.js";
 import { typed } from "./modules/typed.js";
 import { menuShow } from "./modules/menuShow.js";
 import { sendForm } from "./modules/sendForm.js";
+import lightbox from "./modules/lightbox.js";
 
 
 document.addEventListener("DOMContentLoaded", e=> {
@@ -11,4 +12,5 @@ document.addEventListener("DOMContentLoaded", e=> {
   typed,
   menuShow(".menu-btn", ".menu", ".menu-link a"),
   sendForm();
+  lightbox();
 });

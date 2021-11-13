@@ -26,6 +26,7 @@ header {
    top: 0;
    height: 100vh;
    background: url(Img/code-bg.jpg) no-repeat;
+   background-position: center;
    background-size: cover;
    width: 100%;
    z-index: 1;
@@ -113,7 +114,7 @@ nav ul li:hover::before {
 
 .menu-btn {
     position: absolute;
-    top: 0.1rem;
+    top: 0.4rem;
     right: 1rem;
     z-index: 999;
 }
@@ -171,7 +172,8 @@ header section .header__title::before {
 }
 
 .fa-github:hover {
-    opacity: .65;
+    opacity: .85;
+    color: lightgray;
 }
 
 .fa-instagram:hover {
@@ -411,7 +413,7 @@ main {
 
 .swiper-slide {
     width: 300px;
-    height: 500px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,14 +426,75 @@ main {
 .swiper-slide figure {
     background-color: #232322;
     width: 300px;
-    height: 500px;
+    height: 450px;
     overflow-y: scroll;
     padding: 1.5rem;
 }
 
 .swiper-slide figure img {
     object-fit: cover;
+    transition: all .2s ease-in;
 }
+
+.swiper-slide figure img:hover {
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+
+/* Lightbox Image */
+.lightbox {
+    z-index: 999;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .4s ease-in;
+    transform: translateX(-100%);
+    
+}
+
+.move {
+    transform: translateX(0);
+}
+
+.lightbox__figure {
+    height: 700px;
+    overflow-y: scroll !important;
+    width: 80%;
+    padding: 3rem 0;
+}
+
+.lightbox__img {
+    transform: scale(0);
+    object-fit: cover;
+    transition: transform .2s 2s ease-in;
+}
+
+.showImg {
+    transform: scale(1);
+    z-index: 998;
+}
+
+.lightbox__icon {
+    position: fixed;
+    cursor: pointer;
+    z-index: 999;
+    top: 1rem;
+    right: 2rem;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+/**/
 
 .swiper-button-prev, .swiper-button-next {
     color: #f9f9f965 !important;
@@ -501,6 +564,7 @@ footer {
 }
 
 @media screen and (min-width: 769px) {
+    
     .menu {
         display: flex;
         flex-direction: row;
@@ -550,4 +614,60 @@ footer {
         visibility: visible;
         opacity: 1;
     }
+
+    /* Lightbox Image */
+    .lightbox {
+        z-index: 999;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        left: 0;
+        min-height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform .4s ease-in;
+        transform: translateX(-100%);
+    }
+    
+    .move {
+        transform: translateX(0);
+    }
+
+    .lightbox__figure {
+        overflow-y: scroll !important;
+        height: 700px;
+        width: 40%;
+        padding: 3rem 0;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    
+    .lightbox__img {
+        object-fit: cover;
+        transition: transform .2s 3s ease-in;
+        transform: scale(0);
+    }
+
+    .showImg {
+        transform: scale(1);
+    }
+
+    .lightbox__icon {
+        position: fixed;
+        cursor: pointer;
+        z-index: 999;
+        top: 1rem;
+        right: 2rem;
+    }
+
+    .no-scroll {
+        overflow: hidden !important;
+    }
+    /**/
 }
